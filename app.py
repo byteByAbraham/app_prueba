@@ -36,7 +36,7 @@ import time
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    time.sleep(2)
+    time.sleep(0.5)
     msg = None
     if request.method == 'POST':
         name = request.form.get('name')
@@ -45,4 +45,4 @@ def home():
     return render_template_string(HTML_PAGE, msg=msg)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, threaded=False)
