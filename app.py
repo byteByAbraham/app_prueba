@@ -32,8 +32,11 @@ HTML_PAGE = '''
 </html>
 '''
 
+import time
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
+    time.sleep(2)
     msg = None
     if request.method == 'POST':
         name = request.form.get('name')
