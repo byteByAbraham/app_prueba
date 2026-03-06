@@ -63,7 +63,7 @@ HTML_PAGE = '''
 </head>
 <body>
     <div class="container">
-        <h1>Portal de Apoyo</h1>
+        <h1>Portal de Apoyo Estudiantil</h1>
         <p>Regístrate para recibir ayuda con tus proyectos de ingeniería.</p>
         <form method="POST">
             <input type="text" name="name" placeholder="Nombre Completo" required><br>
